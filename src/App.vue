@@ -1,7 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <header>
+      <div class="content">
+        <router-link tag="h1" :to="{name: 'Products'}">
+          <a>JS' Dairy Farm</a>
+        </router-link>
+      </div>
+    </header>
+    <router-view class="content main"/>
+    <footer>
+      <p class="content">
+        Made with ♥ by <a href="http://snipcart.com/">Snipcart</a>.
+        See <a href="">the blog post</a> and
+        <a href="https://github.com/snipcart/snipcart-buttercms-demo">the repo</a>.
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -12,12 +25,53 @@ export default {
 </script>
 
 <style>
+html, body, #app {
+  margin: 0;
+  height: 100%;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: #61bdff;
+  width: 100%;
+  padding: 1em 0;
+  flex:0 0 auto;
+}
+
+.main {
+  flex:1 1 100%;
+  padding: 3em 0;
+}
+
+.content {
+  width: 100%;
+  max-width: 38em;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+h1 a:before {
+  display: inline-block;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+
+  position: relative;
+  top: .25em;
+
+  background-image: url('/static/logo.svg');
+  background-repeat: no-repeat;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
