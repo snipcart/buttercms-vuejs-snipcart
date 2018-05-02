@@ -4,6 +4,8 @@ var request = require('request');
 
 exports.handler = function(event, context, callback) {
 
+  console.log('Received %s request: ', event.httpMethod, event.body);
+
   // buttercms send webhook data as POST request
   if(event.httpMethod !== 'POST' || !event.body) {
     return callback(null, {
@@ -30,6 +32,11 @@ exports.handler = function(event, context, callback) {
       fetchUrl: 'https://snipcart-buttercms-demo.netlify.com/.netlify/functions/snipcart_json_crawler',
     }
   }, function(err, res, body) {
+    if(err) {
+      console.log('Error from Snipcart crawler: ', err);
+    } else {
+      console.log('Response from Snipcart crawler: ', body);
+    }
     callback(null, {
       statusCode: 200,
       body: '',
