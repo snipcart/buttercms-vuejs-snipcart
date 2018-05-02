@@ -69,13 +69,24 @@ export default {
   text-align: center;
 }
 
-.product {
-  list-style-type: none;
-  width: 30%;
+.products p {
+  margin: 0 .5em;
 }
 
-.product figure + p {
-  margin-top: -1em;
+.products .snipcart-add-item {
+  margin-top: 1em;
+}
+
+.product {
+  list-style-type: none;
+  box-sizing: border-box;
+  width: 30%;
+  padding: .5em;
+  min-width: 8em;
+}
+
+.product figure {
+  margin: 0;
 }
 
 .product:hover {

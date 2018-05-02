@@ -45,16 +45,17 @@ header, footer {
   flex:0 0 auto;
 }
 
-.main {
-  flex:1 1 100%;
-  padding: 3em 0;
-}
-
 .content {
-  width: 100%;
-  max-width: 38em;
+  width: 38em;
+  max-width: 100%;
   margin: auto;
   box-sizing: border-box;
+  padding: 0 1em;
+}
+
+.main {
+  flex:1 1 100%;
+  padding: 3em 1em;
 }
 
 h1 a:before {
