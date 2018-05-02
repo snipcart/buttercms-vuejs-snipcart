@@ -8,10 +8,12 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js && netlify-lambda build src/functions"
   },
   "dependencies": {
     "buttercms": "^1.1.1",
+    "dotenv": "^5.0.1",
+    "netlify-lambda": "^0.4.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
