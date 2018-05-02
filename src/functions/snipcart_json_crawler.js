@@ -11,6 +11,7 @@ exports.handler = function(event, context, callback) {
     });
   }
   
+  // list products the same way we do on the website
   butter.page.list('product')
     .then((res) => {
       var products = res.data.data.map((product) => {
@@ -27,5 +28,5 @@ exports.handler = function(event, context, callback) {
       	},
       	body: JSON.stringify(products),
       });
-    });
+    }); // we would normally handle errors right? ;)
 }
