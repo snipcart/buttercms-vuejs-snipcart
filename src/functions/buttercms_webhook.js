@@ -35,7 +35,7 @@ exports.handler = function(event, context, callback) {
     if(err) {
       console.log('Error from Snipcart crawler: ', err);
     } else {
-      console.log('Response from Snipcart crawler: ', body);
+      console.log('Response(%d) from Snipcart crawler: ', res.statusCode, body);
     }
     callback(null, {
       statusCode: 200,
