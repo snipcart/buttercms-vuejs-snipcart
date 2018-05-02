@@ -5,7 +5,7 @@ exports.handler = function(event, context, callback) {
 
   // snipcart send a GET request when crawling products
   if(event.httpMethod !== 'GET') {
-    callback(null, {
+    return callback(null, {
       statusCode: 200,
       body: ''
     });
@@ -17,7 +17,11 @@ exports.handler = function(event, context, callback) {
       var products = res.data.data.map((product) => {
       	return {
       		id: product.fields.product_id,
+          name: product.fields.name,
       		price: product.fields.price,
+          description: product.fields.description,
+          image: product.fields.image,
+          url: 'https://snipcart-buttercms-demo.netlify.com/.netlify/functions/snipcart_json_crawler',
       	};
       });
 

@@ -15,6 +15,7 @@
     "dotenv": "^5.0.1",
     "netlify-lambda": "^0.4.0",
     "numeral": "^2.0.6",
+    "request": "^2.85.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
