@@ -23,11 +23,8 @@ exports.handler = function(event, context, callback) {
   }
   
   request.post({
-    url: 'https://app.snipcart.com/api/products',
+    url: 'https://'+ process.env.SNIPCART_API_KEY +':@app.snipcart.com/api/products',
     json: true,
-    headers: {
-      Authentication: 'Basic ' + (new Buffer(process.env.SNIPCART_API_KEY + ':', 'utf8').toString('base64')),
-    },
     body: {
       fetchUrl: 'https://snipcart-buttercms-demo.netlify.com/.netlify/functions/snipcart_json_crawler',
     }
