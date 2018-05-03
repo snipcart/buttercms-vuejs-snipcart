@@ -16,12 +16,12 @@ export default {
 
 <style>
 .snipcart-add-item {
-	display: inline-block;
-	padding: .2em;
-	background-color: #61bdff;
+    display: inline-block;
+    padding: .2em;
+    background-color: #61bdff;
 
-	text-decoration: none;
-	color: inherit;
-	border-radius: .3em;
+    text-decoration: none;
+    color: inherit;
+    border-radius: .3em;
 }
 </style>

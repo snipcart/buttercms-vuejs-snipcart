@@ -10,8 +10,8 @@
     <router-view class="content main"/>
     <footer>
       <p class="content">
-        Made with ♥ by <a href="http://snipcart.com/">Snipcart</a>.
-        See <a href="">the blog post</a> and
+        Made with ♥ by <a href="http://snipcart.com/">Snipcart</a> and ⚡ by <a href="https://buttercms.com/">ButterCMS</a>.
+        See <a href="https://snipcart.com/blog/vuejs-ecommerce-headless-buttercms">the blog post</a> and
         <a href="https://github.com/snipcart/snipcart-buttercms-demo">the repo</a>.
       </p>
     </footer>
