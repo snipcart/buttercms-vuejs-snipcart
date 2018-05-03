@@ -1,6 +1,12 @@
-# snipcart-buttercms-demo
+# Build a Vue.Js E-Commerce App with ButterCMS Headless Backend
 
-> A Vue.js and ButterCMS demo
+![vuejs-ecommerce-snipcart-buttercms](https://snipcart.com/media/203610/vuejs-ecommerce-buttercms-snipcart.jpg)
+
+Learn how to leverage Vue.js for e-commerce by bundling together a powerful, frontend centric online shop. Our recipe: Vue in the frontend + HTML/JS shopping cart + ButterCMS in the backend. Live demo & code repo included!
+
+> [Read the full tutorial](https://snipcart.com/blog/vuejs-ecommerce-headless-buttercms)
+
+> [See the live demo](https://snipcart-buttercms-demo.netlify.com/)
 
 ## Build Setup
 
