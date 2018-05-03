@@ -25,7 +25,6 @@ export default {
   },
   data() {
     return {
-      slug: this.$route.params.slug,
       product: {
         slug: '',
         fields: {},
@@ -33,6 +32,7 @@ export default {
       notFound: false,
     };
   },
+  props: ['slug'],
   methods: {
     getProduct() {
       butter.page.retrieve('product', this.slug)
