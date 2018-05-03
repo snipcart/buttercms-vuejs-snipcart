@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     navigate($event, product) {
-      if ($event.defaultPrevented) {
+      if ($event.target.classList.contains('snipcart-add-item')) {
         return;
       }
       this.$router.push({
