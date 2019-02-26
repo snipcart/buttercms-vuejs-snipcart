@@ -2,11 +2,23 @@
 
 ![vuejs-ecommerce-snipcart-buttercms](https://snipcart.com/media/203610/vuejs-ecommerce-buttercms-snipcart.jpg)
 
-Learn how to leverage Vue.js for e-commerce by bundling together a powerful, frontend centric online shop. Our recipe: Vue in the frontend + HTML/JS shopping cart + ButterCMS in the backend. Live demo & code repo included!
+There's a plethora of cool frameworks/ tools out there. Why not create a custom, kick*ss shopping experience with these?
+
+Here, I want to use Vue.js to show you that's possible. Because yeah, Vue.js e-commerce is a thing!
+
+And with the right set up in the backend—headless content management, namely— it can be a darn cool thing.
+
+Steps:
+
+- Create a neat, frontend Vue storefront
+- Integrate a customizable HTML/JS cart in a Vue app
+- Hook the Vue e-comm. app with headless ButterCMS
 
 > [Read the full tutorial](https://snipcart.com/blog/vuejs-ecommerce-headless-buttercms)
 
 > [See the live demo](https://snipcart-buttercms-demo.netlify.com/)
+
+Enjoy folks!
 
 ## Build Setup
 
